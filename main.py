@@ -104,8 +104,14 @@ def get_nasdaq_report_details(url):
 
 def main():
     '''Entry point'''
-    # Set our target date to tomorrow
-    req_date = utc_to_local() + timedelta(days=1)
+    # Get user input for target date
+    range_input = raw_input("How many days in advance to search?")
+    try:
+        range_input = int(range_input)
+    except:
+        print 'Please enter an Integer'
+        quit()
+    req_date = utc_to_local() + timedelta(days=range_input)
     print 'date: %s' % nasdaq_date(req_date)
     # Request the main calendar for the day
     reports = list()
