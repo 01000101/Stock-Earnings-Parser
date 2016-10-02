@@ -7,6 +7,7 @@ import time
 import re
 from lxml import html
 import requests
+import sys, getopt
 
 
 NASDAQ_CALENDAR_URL = \
@@ -102,10 +103,27 @@ def get_nasdaq_report_details(url):
     }
 
 
-def main():
+def main(argv):
     '''Entry point'''
-    # Set our target date to tomorrow
-    req_date = utc_to_local() + timedelta(days=1)
+    target = 1
+    try:
+        opts, args = getopt.getopt(argv,"ht:t",["target="])
+    except getopt.GetoptError:
+        print 'main.py -t <target>'
+        sys.exit(2)
+    for opt, arg in opts:
+        if opt == '-h':
+            print 'Usage: main.py -t <target>'
+            sys.exit()
+        elif opt in ("-t", "--target"):
+            target = arg
+            try:
+                target = int(target)
+            except:
+                print 'Please use an Integer when specifying target'
+                sys.exit(2)
+    # Set our target date 
+    req_date = utc_to_local() + timedelta(days=target)
     print 'date: %s' % nasdaq_date(req_date)
     # Request the main calendar for the day
     reports = list()
@@ -131,5 +149,5 @@ def main():
             pprint(report, indent=2)
 
 
-if __name__ == '__main__':
-    main()
+if __name__ == "__main__":
+   main(sys.argv[1:])
