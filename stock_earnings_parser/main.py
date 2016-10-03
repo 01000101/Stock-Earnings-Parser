@@ -150,6 +150,17 @@ def main(argv=None):
         dest='analysts_max',
         help='Filter by number of analysts (maximum)',
         type=int)
+    group = parser.add_mutually_exclusive_group()
+    group.add_argument(
+        '--premarket',
+        help='Filter premarket only.',
+        action='store_true',
+        default=None)
+    group.add_argument(
+        '--no-premarket',
+        help='Filter non premarket only.',
+        action='store_true',
+        default=None)
     argv = [] if argv is None else argv
     args = parser.parse_args(argv)
     start_date = datetime.strptime(args.start_date, '%d/%m/%Y')
@@ -177,6 +188,14 @@ def main(argv=None):
         if args.analysts_max is not None and \
                 report['analysts'] > args.analysts_max:
             continue
+        # premarket flag
+        if args.premarket is not None:
+            if not report['premarket']:
+                continue
+        if args.no_premarket is not None:
+            if report['premarket']:
+                continue
+        # surprise delta flag
         if report['estimated'] > report['history'][0]['actual']:
             tag = '== %s ==' % report['meta']['symbol']
             if args.surprise_delta_min is not None:

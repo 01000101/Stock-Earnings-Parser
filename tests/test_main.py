@@ -74,3 +74,20 @@ class MainFuncTest(TestCase):
         '''Test --surprise-delta-min'''
         main(['--surprise-delta-min', '5.0'])
         assert len(mock_pprint.mock_calls) == 7
+
+    def test_premarket(self,
+                       mock_get_report_links,
+                       mock_get_report_details,
+                       mock_pprint):
+        '''test premarket flag.'''
+        # test premarket flag
+        main(['--premarket'])
+        assert len(mock_pprint.mock_calls) == 6
+        # reset mock
+        mock_pprint.reset_mock()
+        # test no-premarket flag
+        main(['--no-premarket'])
+        assert len(mock_pprint.mock_calls) == 5
+        # test both premarket flags called
+        with pytest.raises(SystemExit):
+            main(['--no-premarket', '--premarket'])
