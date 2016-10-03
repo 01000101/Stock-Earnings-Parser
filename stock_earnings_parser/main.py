@@ -154,9 +154,10 @@ def main(argv=None):
                 tag,
                 '=' * len(tag))
             if args.surprise_delta_min is not None:
-                report['history'] = filter(
-                    lambda x: abs(x['surprise']) < abs(args.surprise_delta_min), report['history']
-                )
+                report['history'] = [
+                    x for x in report['history']
+                    if abs(x['surprise']) < abs(args.surprise_delta_min)
+                ]
                 if not report['history']:
                     continue
             pprint(report, indent=2)
