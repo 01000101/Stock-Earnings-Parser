@@ -123,9 +123,33 @@ def main(argv=None):
     parser.add_argument(
         '--surprise-delta-min',
         dest='surprise_delta_min',
-        help='Filter surprise point to certain range',
-        type=float,
-    )
+        help='Filer by historical surprise delta (minimum)',
+        type=float)
+    parser.add_argument(
+        '--surprise-delta-max',
+        dest='surprise_delta_max',
+        help='Filer by historical surprise delta (maximum)',
+        type=float)
+    parser.add_argument(
+        '--expected-min',
+        dest='expected_min',
+        help='Filter by expected price (minimum)',
+        type=float)
+    parser.add_argument(
+        '--expected-max',
+        dest='expected_max',
+        help='Filter by expected price (maximum)',
+        type=float)
+    parser.add_argument(
+        '--analysts-min',
+        dest='analysts_min',
+        help='Filter by number of analysts (minimum)',
+        type=int)
+    parser.add_argument(
+        '--analysts-max',
+        dest='analysts_max',
+        help='Filter by number of analysts (maximum)',
+        type=int)
     argv = [] if argv is None else argv
     args = parser.parse_args(argv)
     start_date = datetime.strptime(args.start_date, '%d/%m/%Y')
@@ -147,19 +171,35 @@ def main(argv=None):
         report['meta'] = meta
         reports.append(report)
     for report in reports:
+        if args.analysts_min is not None and \
+                report['analysts'] < args.analysts_min:
+            continue
+        if args.analysts_max is not None and \
+                report['analysts'] > args.analysts_max:
+            continue
         if report['estimated'] > report['history'][0]['actual']:
             tag = '== %s ==' % report['meta']['symbol']
-            print '%s\n%s\n%s' % (
-                '=' * len(tag),
-                tag,
-                '=' * len(tag))
             if args.surprise_delta_min is not None:
                 report['history'] = [
                     x for x in report['history']
-                    if abs(x['surprise']) < abs(args.surprise_delta_min)
+                    if abs(x['surprise']) > abs(args.surprise_delta_min)
                 ]
-                if not report['history']:
-                    continue
+            if args.surprise_delta_max is not None:
+                report['history'] = [
+                    x for x in report['history']
+                    if abs(x['surprise']) < abs(args.surprise_delta_max)
+                ]
+            if args.expected_min is not None:
+                report['history'] = [
+                    x for x in report['history']
+                    if x['expected'] > args.expected_min
+                ]
+            if args.expected_max is not None:
+                report['history'] = [
+                    x for x in report['history']
+                    if x['expected'] < args.expected_max
+                ]
+            print '%s\n%s\n%s' % ('=' * len(tag), tag, '=' * len(tag))
             pprint(report, indent=2)
 
 
