@@ -1,0 +1,778 @@
+[
+  [
+    "http://www.nasdaq.com/earnings/report/avp", 
+    {
+      "estimated": 0.03, 
+      "meta": {
+        "url": "http://www.nasdaq.com/earnings/report/avp", 
+        "symbol": "AVP"
+      }, 
+      "analysts": 7, 
+      "premarket": true, 
+      "history": [
+        {
+          "expected": 0.03, 
+          "reported": "08/02/2016", 
+          "quarter": "Jun2016", 
+          "actual": 0.07, 
+          "surprise": 133.33
+        }, 
+        {
+          "expected": 0.02, 
+          "reported": "05/05/2016", 
+          "quarter": "Mar2016", 
+          "actual": -0.07, 
+          "surprise": -450.0
+        }, 
+        {
+          "expected": 0.08, 
+          "reported": "02/11/2016", 
+          "quarter": "Dec2015", 
+          "actual": 0.0, 
+          "surprise": -100.0
+        }, 
+        {
+          "expected": 0.07, 
+          "reported": "11/04/2015", 
+          "quarter": "Sep2015", 
+          "actual": -0.11, 
+          "surprise": -257.14
+        }
+      ]
+    }
+  ], 
+  [
+    "http://www.nasdaq.com/earnings/report/bll", 
+    {
+      "estimated": 0.91, 
+      "meta": {
+        "url": "http://www.nasdaq.com/earnings/report/bll", 
+        "symbol": "BLL"
+      }, 
+      "analysts": 5, 
+      "premarket": true, 
+      "history": [
+        {
+          "expected": 0.99, 
+          "reported": "08/04/2016", 
+          "quarter": "Jun2016", 
+          "actual": 1.05, 
+          "surprise": 6.06
+        }, 
+        {
+          "expected": 0.69, 
+          "reported": "04/28/2016", 
+          "quarter": "Mar2016", 
+          "actual": 0.59, 
+          "surprise": -14.49
+        }, 
+        {
+          "expected": 0.75, 
+          "reported": "01/28/2016", 
+          "quarter": "Dec2015", 
+          "actual": 0.8, 
+          "surprise": 6.67
+        }, 
+        {
+          "expected": 0.95, 
+          "reported": "10/29/2015", 
+          "quarter": "Sep2015", 
+          "actual": 1.1, 
+          "surprise": 15.79
+        }
+      ]
+    }
+  ], 
+  [
+    "http://www.nasdaq.com/earnings/report/bce", 
+    {
+      "estimated": 0.7, 
+      "meta": {
+        "url": "http://www.nasdaq.com/earnings/report/bce", 
+        "symbol": "BCE"
+      }, 
+      "analysts": 1, 
+      "premarket": true, 
+      "history": [
+        {
+          "expected": 0.71, 
+          "reported": "08/04/2016", 
+          "quarter": "Jun2016", 
+          "actual": 0.66, 
+          "surprise": -7.04
+        }, 
+        {
+          "expected": 0.65, 
+          "reported": "04/28/2016", 
+          "quarter": "Mar2016", 
+          "actual": 0.62, 
+          "surprise": -4.62
+        }, 
+        {
+          "expected": 0.51, 
+          "reported": "02/04/2016", 
+          "quarter": "Dec2015", 
+          "actual": 0.53, 
+          "surprise": 3.92
+        }, 
+        {
+          "expected": 0.65, 
+          "reported": "11/05/2015", 
+          "quarter": "Sep2015", 
+          "actual": 0.72, 
+          "surprise": 10.77
+        }
+      ]
+    }
+  ], 
+  [
+    "http://www.nasdaq.com/earnings/report/cnq", 
+    null
+  ], 
+  [
+    "http://www.nasdaq.com/earnings/report/cbs", 
+    {
+      "estimated": 0.99, 
+      "meta": {
+        "url": "http://www.nasdaq.com/earnings/report/cbs", 
+        "symbol": "CBS"
+      }, 
+      "analysts": 13, 
+      "premarket": false, 
+      "history": [
+        {
+          "expected": 0.86, 
+          "reported": "07/28/2016", 
+          "quarter": "Jun2016", 
+          "actual": 0.93, 
+          "surprise": 8.14
+        }, 
+        {
+          "expected": 0.94, 
+          "reported": "05/03/2016", 
+          "quarter": "Mar2016", 
+          "actual": 1.02, 
+          "surprise": 8.51
+        }, 
+        {
+          "expected": 0.91, 
+          "reported": "02/11/2016", 
+          "quarter": "Dec2015", 
+          "actual": 0.92, 
+          "surprise": 1.1
+        }, 
+        {
+          "expected": 0.81, 
+          "reported": "11/03/2015", 
+          "quarter": "Sep2015", 
+          "actual": 0.88, 
+          "surprise": 8.64
+        }
+      ]
+    }
+  ], 
+  [
+    "http://www.nasdaq.com/earnings/report/cdr", 
+    null
+  ], 
+  [
+    "http://www.nasdaq.com/earnings/report/chtr", 
+    {
+      "estimated": 0.6, 
+      "meta": {
+        "url": "http://www.nasdaq.com/earnings/report/chtr", 
+        "symbol": "CHTR"
+      }, 
+      "analysts": 7, 
+      "premarket": true, 
+      "history": [
+        {
+          "expected": 0.22, 
+          "reported": "08/09/2016", 
+          "quarter": "Jun2016", 
+          "actual": 0.99, 
+          "surprise": 350.0
+        }, 
+        {
+          "expected": -0.93, 
+          "reported": "04/28/2016", 
+          "quarter": "Mar2016", 
+          "actual": -1.86, 
+          "surprise": -100.0
+        }, 
+        {
+          "expected": -0.13, 
+          "reported": "02/04/2016", 
+          "quarter": "Dec2015", 
+          "actual": -1.21, 
+          "surprise": -830.77
+        }, 
+        {
+          "expected": 0.43, 
+          "reported": "10/29/2015", 
+          "quarter": "Sep2015", 
+          "actual": 0.53, 
+          "surprise": 23.26
+        }
+      ]
+    }
+  ], 
+  [
+    "http://www.nasdaq.com/earnings/report/chd", 
+    null
+  ], 
+  [
+    "http://www.nasdaq.com/earnings/report/ffg", 
+    {
+      "estimated": 1.03, 
+      "meta": {
+        "url": "http://www.nasdaq.com/earnings/report/ffg", 
+        "symbol": "FFG"
+      }, 
+      "analysts": 2, 
+      "premarket": false, 
+      "history": [
+        {
+          "expected": 1.03, 
+          "reported": "08/04/2016", 
+          "quarter": "Jun2016", 
+          "actual": 1.02, 
+          "surprise": -0.97
+        }, 
+        {
+          "expected": 0.98, 
+          "reported": "05/09/2016", 
+          "quarter": "Mar2016", 
+          "actual": 1.05, 
+          "surprise": 7.14
+        }, 
+        {
+          "expected": 1.08, 
+          "reported": "02/11/2016", 
+          "quarter": "Dec2015", 
+          "actual": 1.04, 
+          "surprise": -3.7
+        }, 
+        {
+          "expected": 1.0, 
+          "reported": "11/03/2015", 
+          "quarter": "Sep2015", 
+          "actual": 1.09, 
+          "surprise": 9.0
+        }
+      ]
+    }
+  ], 
+  [
+    "http://www.nasdaq.com/earnings/report/h", 
+    {
+      "estimated": 0.28, 
+      "meta": {
+        "url": "http://www.nasdaq.com/earnings/report/h", 
+        "symbol": "H"
+      }, 
+      "analysts": 9, 
+      "premarket": true, 
+      "history": [
+        {
+          "expected": 0.46, 
+          "reported": "08/02/2016", 
+          "quarter": "Jun2016", 
+          "actual": 0.64, 
+          "surprise": 39.13
+        }, 
+        {
+          "expected": 0.24, 
+          "reported": "05/03/2016", 
+          "quarter": "Mar2016", 
+          "actual": 0.25, 
+          "surprise": 4.17
+        }, 
+        {
+          "expected": 0.24, 
+          "reported": "02/18/2016", 
+          "quarter": "Dec2015", 
+          "actual": 0.21, 
+          "surprise": -12.5
+        }, 
+        {
+          "expected": 0.22, 
+          "reported": "11/03/2015", 
+          "quarter": "Sep2015", 
+          "actual": 0.29, 
+          "surprise": 31.82
+        }
+      ]
+    }
+  ], 
+  [
+    "http://www.nasdaq.com/earnings/report/podd", 
+    {
+      "estimated": -0.08, 
+      "meta": {
+        "url": "http://www.nasdaq.com/earnings/report/podd", 
+        "symbol": "PODD"
+      }, 
+      "analysts": 14, 
+      "premarket": false, 
+      "history": [
+        {
+          "expected": -0.16, 
+          "reported": "08/03/2016", 
+          "quarter": "Jun2016", 
+          "actual": -0.08, 
+          "surprise": 50.0
+        }, 
+        {
+          "expected": -0.23, 
+          "reported": "04/28/2016", 
+          "quarter": "Mar2016", 
+          "actual": -0.19, 
+          "surprise": 17.39
+        }, 
+        {
+          "expected": -0.26, 
+          "reported": "02/25/2016", 
+          "quarter": "Dec2015", 
+          "actual": -0.27, 
+          "surprise": -3.85
+        }, 
+        {
+          "expected": -0.26, 
+          "reported": "11/05/2015", 
+          "quarter": "Sep2015", 
+          "actual": -0.33, 
+          "surprise": -26.92
+        }
+      ]
+    }
+  ], 
+  [
+    "http://www.nasdaq.com/earnings/report/kgc", 
+    {
+      "estimated": 0.06, 
+      "meta": {
+        "url": "http://www.nasdaq.com/earnings/report/kgc", 
+        "symbol": "KGC"
+      }, 
+      "analysts": 6, 
+      "premarket": false, 
+      "history": [
+        {
+          "expected": 0.01, 
+          "reported": "07/27/2016", 
+          "quarter": "Jun2016", 
+          "actual": -0.01, 
+          "surprise": -200.0
+        }, 
+        {
+          "expected": -0.01, 
+          "reported": "05/10/2016", 
+          "quarter": "Mar2016", 
+          "actual": 0.0, 
+          "surprise": 100.0
+        }, 
+        {
+          "expected": -0.05, 
+          "reported": "02/10/2016", 
+          "quarter": "Dec2015", 
+          "actual": -0.06, 
+          "surprise": -20.0
+        }, 
+        {
+          "expected": -0.03, 
+          "reported": "11/10/2015", 
+          "quarter": "Sep2015", 
+          "actual": -0.02, 
+          "surprise": 33.33
+        }
+      ]
+    }
+  ], 
+  [
+    "http://www.nasdaq.com/earnings/report/ldos", 
+    {
+      "estimated": 0.96, 
+      "meta": {
+        "url": "http://www.nasdaq.com/earnings/report/ldos", 
+        "symbol": "LDOS"
+      }, 
+      "analysts": 5, 
+      "premarket": true, 
+      "history": [
+        {
+          "expected": 0.73, 
+          "reported": "07/28/2016", 
+          "quarter": "Jun2016", 
+          "actual": 0.68, 
+          "surprise": -6.85
+        }, 
+        {
+          "expected": 0.68, 
+          "reported": "04/27/2016", 
+          "quarter": "Mar2016", 
+          "actual": 0.72, 
+          "surprise": 5.88
+        }, 
+        {
+          "expected": 0.66, 
+          "reported": "02/18/2016", 
+          "quarter": "Dec2015", 
+          "actual": 0.78, 
+          "surprise": 18.18
+        }, 
+        {
+          "expected": 0.62, 
+          "reported": "10/29/2015", 
+          "quarter": "Sep2015", 
+          "actual": 0.71, 
+          "surprise": 14.52
+        }
+      ]
+    }
+  ], 
+  [
+    "http://www.nasdaq.com/earnings/report/mdu", 
+    {
+      "estimated": 0.43, 
+      "meta": {
+        "url": "http://www.nasdaq.com/earnings/report/mdu", 
+        "symbol": "MDU"
+      }, 
+      "analysts": 4, 
+      "premarket": true, 
+      "history": [
+        {
+          "expected": 0.2, 
+          "reported": "08/02/2016", 
+          "quarter": "Jun2016", 
+          "actual": 0.24, 
+          "surprise": 20.0
+        }, 
+        {
+          "expected": 0.13, 
+          "reported": "05/03/2016", 
+          "quarter": "Mar2016", 
+          "actual": 0.17, 
+          "surprise": 30.77
+        }, 
+        {
+          "expected": 0.27, 
+          "reported": "02/03/2016", 
+          "quarter": "Dec2015", 
+          "actual": 0.25, 
+          "surprise": -7.41
+        }, 
+        {
+          "expected": 0.37, 
+          "reported": "11/02/2015", 
+          "quarter": "Sep2015", 
+          "actual": 0.38, 
+          "surprise": 2.7
+        }
+      ]
+    }
+  ], 
+  [
+    "http://www.nasdaq.com/earnings/report/mrc", 
+    {
+      "estimated": -0.16, 
+      "meta": {
+        "url": "http://www.nasdaq.com/earnings/report/mrc", 
+        "symbol": "MRC"
+      }, 
+      "analysts": 8, 
+      "premarket": false, 
+      "history": [
+        {
+          "expected": -0.14, 
+          "reported": "08/02/2016", 
+          "quarter": "Jun2016", 
+          "actual": -0.21, 
+          "surprise": -50.0
+        }, 
+        {
+          "expected": -0.13, 
+          "reported": "05/02/2016", 
+          "quarter": "Mar2016", 
+          "actual": -0.1, 
+          "surprise": 23.08
+        }, 
+        {
+          "expected": 0.03, 
+          "reported": "02/22/2016", 
+          "quarter": "Dec2015", 
+          "actual": 0.12, 
+          "surprise": 300.0
+        }, 
+        {
+          "expected": 0.03, 
+          "reported": "11/05/2015", 
+          "quarter": "Sep2015", 
+          "actual": 0.1, 
+          "surprise": 233.33
+        }
+      ]
+    }
+  ], 
+  [
+    "http://www.nasdaq.com/earnings/report/pba", 
+    null
+  ], 
+  [
+    "http://www.nasdaq.com/earnings/report/prft", 
+    {
+      "estimated": 0.29, 
+      "meta": {
+        "url": "http://www.nasdaq.com/earnings/report/prft", 
+        "symbol": "PRFT"
+      }, 
+      "analysts": 1, 
+      "premarket": true, 
+      "history": [
+        {
+          "expected": 0.27, 
+          "reported": "08/04/2016", 
+          "quarter": "Jun2016", 
+          "actual": 0.21, 
+          "surprise": -22.22
+        }, 
+        {
+          "expected": 0.23, 
+          "reported": "05/05/2016", 
+          "quarter": "Mar2016", 
+          "actual": 0.19, 
+          "surprise": -17.39
+        }, 
+        {
+          "expected": 0.29, 
+          "reported": "03/03/2016", 
+          "quarter": "Dec2015", 
+          "actual": 0.3, 
+          "surprise": 3.45
+        }, 
+        {
+          "expected": 0.27, 
+          "reported": "11/05/2015", 
+          "quarter": "Sep2015", 
+          "actual": 0.3, 
+          "surprise": 11.11
+        }
+      ]
+    }
+  ], 
+  [
+    "http://www.nasdaq.com/earnings/report/gold", 
+    {
+      "estimated": 1.13, 
+      "meta": {
+        "url": "http://www.nasdaq.com/earnings/report/gold", 
+        "symbol": "GOLD"
+      }, 
+      "analysts": 1, 
+      "premarket": true, 
+      "history": [
+        {
+          "expected": 0.7, 
+          "reported": "08/04/2016", 
+          "quarter": "Jun2016", 
+          "actual": 0.52, 
+          "surprise": -25.71
+        }, 
+        {
+          "expected": 0.56, 
+          "reported": "05/04/2016", 
+          "quarter": "Mar2016", 
+          "actual": 0.57, 
+          "surprise": 1.79
+        }, 
+        {
+          "expected": 0.48, 
+          "reported": "02/08/2016", 
+          "quarter": "Dec2015", 
+          "actual": 0.47, 
+          "surprise": -2.08
+        }, 
+        {
+          "expected": 0.48, 
+          "reported": "11/05/2015", 
+          "quarter": "Sep2015", 
+          "actual": 0.45, 
+          "surprise": -6.25
+        }
+      ]
+    }
+  ], 
+  [
+    "http://www.nasdaq.com/earnings/report/smg", 
+    {
+      "estimated": -0.24, 
+      "meta": {
+        "url": "http://www.nasdaq.com/earnings/report/smg", 
+        "symbol": "SMG"
+      }, 
+      "analysts": 5, 
+      "premarket": false, 
+      "history": [
+        {
+          "expected": 2.08, 
+          "reported": "08/03/2016", 
+          "quarter": "Jun2016", 
+          "actual": 2.16, 
+          "surprise": 3.85
+        }, 
+        {
+          "expected": 2.49, 
+          "reported": "05/03/2016", 
+          "quarter": "Mar2016", 
+          "actual": 3.0, 
+          "surprise": 20.48
+        }, 
+        {
+          "expected": -1.14, 
+          "reported": "02/02/2016", 
+          "quarter": "Dec2015", 
+          "actual": -1.13, 
+          "surprise": 0.88
+        }, 
+        {
+          "expected": -0.16, 
+          "reported": "11/03/2015", 
+          "quarter": "Sep2015", 
+          "actual": -0.12, 
+          "surprise": 25.0
+        }
+      ]
+    }
+  ], 
+  [
+    "http://www.nasdaq.com/earnings/report/swir", 
+    {
+      "estimated": 0.04, 
+      "meta": {
+        "url": "http://www.nasdaq.com/earnings/report/swir", 
+        "symbol": "SWIR"
+      }, 
+      "analysts": 4, 
+      "premarket": false, 
+      "history": [
+        {
+          "expected": 0.05, 
+          "reported": "08/04/2016", 
+          "quarter": "Jun2016", 
+          "actual": 0.1, 
+          "surprise": 100.0
+        }, 
+        {
+          "expected": -0.06, 
+          "reported": "05/05/2016", 
+          "quarter": "Mar2016", 
+          "actual": 0.02, 
+          "surprise": 133.33
+        }, 
+        {
+          "expected": 0.02, 
+          "reported": "02/04/2016", 
+          "quarter": "Dec2015", 
+          "actual": 0.04, 
+          "surprise": 100.0
+        }, 
+        {
+          "expected": 0.16, 
+          "reported": "11/05/2015", 
+          "quarter": "Sep2015", 
+          "actual": 0.17, 
+          "surprise": 6.25
+        }
+      ]
+    }
+  ], 
+  [
+    "http://www.nasdaq.com/earnings/report/thg", 
+    {
+      "estimated": 1.4, 
+      "meta": {
+        "url": "http://www.nasdaq.com/earnings/report/thg", 
+        "symbol": "THG"
+      }, 
+      "analysts": 1, 
+      "premarket": false, 
+      "history": [
+        {
+          "expected": 1.22, 
+          "reported": "07/28/2016", 
+          "quarter": "Jun2016", 
+          "actual": 1.24, 
+          "surprise": 1.64
+        }, 
+        {
+          "expected": 1.59, 
+          "reported": "05/04/2016", 
+          "quarter": "Mar2016", 
+          "actual": 1.64, 
+          "surprise": 3.14
+        }, 
+        {
+          "expected": 1.57, 
+          "reported": "02/04/2016", 
+          "quarter": "Dec2015", 
+          "actual": 1.82, 
+          "surprise": 15.92
+        }, 
+        {
+          "expected": 1.41, 
+          "reported": "10/28/2015", 
+          "quarter": "Sep2015", 
+          "actual": 1.61, 
+          "surprise": 14.18
+        }
+      ]
+    }
+  ], 
+  [
+    "http://www.nasdaq.com/earnings/report/ths", 
+    null
+  ], 
+  [
+    "http://www.nasdaq.com/earnings/report/wpx", 
+    {
+      "estimated": -0.19, 
+      "meta": {
+        "url": "http://www.nasdaq.com/earnings/report/wpx", 
+        "symbol": "WPX"
+      }, 
+      "analysts": 11, 
+      "premarket": true, 
+      "history": [
+        {
+          "expected": -0.22, 
+          "reported": "08/03/2016", 
+          "quarter": "Jun2016", 
+          "actual": -0.28, 
+          "surprise": -27.27
+        }, 
+        {
+          "expected": -0.19, 
+          "reported": "05/04/2016", 
+          "quarter": "Mar2016", 
+          "actual": -0.21, 
+          "surprise": -10.53
+        }, 
+        {
+          "expected": -0.19, 
+          "reported": "02/24/2016", 
+          "quarter": "Dec2015", 
+          "actual": -0.13, 
+          "surprise": 31.58
+        }, 
+        {
+          "expected": -0.12, 
+          "reported": "11/04/2015", 
+          "quarter": "Sep2015", 
+          "actual": -0.17, 
+          "surprise": -41.67
+        }
+      ]
+    }
+  ]
+]

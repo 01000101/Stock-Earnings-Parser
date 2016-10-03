@@ -105,7 +105,7 @@ def get_nasdaq_report_details(url):
     }
 
 
-def main():
+def main(argv=None):
     '''Entry point'''
     parser = argparse.ArgumentParser(
         prog='stock-earnings-parser',
@@ -126,7 +126,8 @@ def main():
         help='Filter surprise point to certain range',
         type=float,
     )
-    args = parser.parse_args()
+    argv = [] if argv is None else argv
+    args = parser.parse_args(argv)
     start_date = datetime.strptime(args.start_date, '%d/%m/%Y')
 
     # Set our target date
@@ -162,4 +163,4 @@ def main():
 
 
 if __name__ == "__main__":
-   main()
+    main(sys.argv[1:])
