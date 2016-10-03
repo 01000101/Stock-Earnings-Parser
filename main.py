@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 '''
     Web scraper for NASDAQ earnings reports
 '''
@@ -119,7 +120,12 @@ def main():
              'This defaults to tomorrow\'s date.',
         type=str,
         default=(utc_to_local() + timedelta(days=1)).strftime('%d/%m/%Y'))
-
+    parser.add_argument(
+        '--surprise-delta-min',
+        dest='surprise_delta_min',
+        help='Filter surprise point to certain range',
+        type=float,
+    )
     args = parser.parse_args()
     start_date = datetime.strptime(args.start_date, '%d/%m/%Y')
 
@@ -146,6 +152,12 @@ def main():
                 '=' * len(tag),
                 tag,
                 '=' * len(tag))
+            if args.surprise_delta_min is not None:
+                report['history'] = filter(
+                    lambda x: abs(x['surprise']) < abs(args.surprise_delta_min), report['history']
+                )
+                if not report['history']:
+                    continue
             pprint(report, indent=2)
 
 
