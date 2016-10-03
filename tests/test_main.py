@@ -89,6 +89,29 @@ class MainFuncTest(TestCase):
         meta_symbol_with_empty_history = ['MRC', 'KGC']
         self.check_empty_history(input_args_list, meta_symbol_with_empty_history)
 
+    def test_surprise_expected_max(self,
+                                   mock_get_report_links,
+                                   mock_get_report_details,
+                                   mock_pprint):
+        '''Test --expected-max'''
+        main(['--expected-max', '0.1'])
+        assert len(mock_pprint.mock_calls) == 11
+        input_args_list = [x[0] for _, x, _ in mock_pprint.mock_calls]
+        meta_symbol_with_empty_history = [
+            'BCE', 'CBS', 'FFG', 'LDOS', 'MDU', 'PRFT', 'GOLD', 'THG']
+        self.check_empty_history(input_args_list, meta_symbol_with_empty_history)
+
+    def test_surprise_expected_min(self,
+                                   mock_get_report_links,
+                                   mock_get_report_details,
+                                   mock_pprint):
+        '''Test --expected-min'''
+        main(['--expected-min', '0.1'])
+        assert len(mock_pprint.mock_calls) == 11
+        input_args_list = [x[0] for _, x, _ in mock_pprint.mock_calls]
+        meta_symbol_with_empty_history = [u'KGC', u'MRC', u'WPX']
+        self.check_empty_history(input_args_list, meta_symbol_with_empty_history)
+
     def test_analysts_max(self,
                           mock_get_report_links,
                           mock_get_report_details,
