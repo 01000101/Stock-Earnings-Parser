@@ -189,11 +189,9 @@ def main(argv=None):
                 report['analysts'] > args.analysts_max:
             continue
         # premarket flag
-        if args.premarket is not None:
-            if not report['premarket']:
+        if args.premarket is not None and not report['premarket']:
                 continue
-        if args.no_premarket is not None:
-            if report['premarket']:
+        if args.no_premarket is not None and report['premarket']:
                 continue
         # surprise delta flag
         if report['estimated'] > report['history'][0]['actual']:
