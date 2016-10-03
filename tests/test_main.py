@@ -76,11 +76,7 @@ class MainFuncTest(TestCase):
         assert len(mock_pprint.mock_calls) == 11
         input_args_list = [x[0] for _, x, _ in mock_pprint.mock_calls]
         meta_symbol_with_empty_history = ['BCE', 'CBS', 'FFG', 'THG']
-        for input_args in input_args_list:
-            if input_args['meta']['symbol'] in meta_symbol_with_empty_history:
-                assert not input_args['history']
-            else:
-                assert input_args['history']
+        self.check_empty_history(input_args_list, meta_symbol_with_empty_history)
 
     def test_surprise_delta_max(self,
                                 mock_get_report_links,
@@ -91,6 +87,11 @@ class MainFuncTest(TestCase):
         assert len(mock_pprint.mock_calls) == 11
         input_args_list = [x[0] for _, x, _ in mock_pprint.mock_calls]
         meta_symbol_with_empty_history = ['MRC', 'KGC']
+        self.check_empty_history(input_args_list, meta_symbol_with_empty_history)
+
+    @staticmethod
+    def check_empty_history(input_args_list, meta_symbol_with_empty_history):
+        '''Helper function to check input argument list with empty history.'''
         for input_args in input_args_list:
             if input_args['meta']['symbol'] in meta_symbol_with_empty_history:
                 assert not input_args['history']
