@@ -89,6 +89,22 @@ class MainFuncTest(TestCase):
         meta_symbol_with_empty_history = ['MRC', 'KGC']
         self.check_empty_history(input_args_list, meta_symbol_with_empty_history)
 
+    def test_analysts_max(self,
+                          mock_get_report_links,
+                          mock_get_report_details,
+                          mock_pprint):
+        '''test analyst max flag.'''
+        main(['--analysts-max', '7'])
+        assert len(mock_pprint.mock_calls) == 8
+
+    def test_analysts_min(self,
+                          mock_get_report_links,
+                          mock_get_report_details,
+                          mock_pprint):
+        '''test analyst min flag.'''
+        main(['--analysts-min', '7'])
+        assert len(mock_pprint.mock_calls) == 3
+
     @staticmethod
     def check_empty_history(input_args_list, meta_symbol_with_empty_history):
         '''Helper function to check input argument list with empty history.'''
