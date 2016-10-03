@@ -72,8 +72,30 @@ class MainFuncTest(TestCase):
                                 mock_get_report_details,
                                 mock_pprint):
         '''Test --surprise-delta-min'''
-        main(['--surprise-delta-min', '5.0'])
-        assert len(mock_pprint.mock_calls) == 7
+        main(['--surprise-delta-min', '16.0'])
+        assert len(mock_pprint.mock_calls) == 11
+        input_args_list = [x[0] for _, x, _ in mock_pprint.mock_calls]
+        meta_symbol_with_empty_history = ['BCE', 'CBS', 'FFG', 'THG']
+        for input_args in input_args_list:
+            if input_args['meta']['symbol'] in meta_symbol_with_empty_history:
+                assert not input_args['history']
+            else:
+                assert input_args['history']
+
+    def test_surprise_delta_max(self,
+                                mock_get_report_links,
+                                mock_get_report_details,
+                                mock_pprint):
+        '''Test --surprise-delta-max'''
+        main(['--surprise-delta-max', '16.0'])
+        assert len(mock_pprint.mock_calls) == 11
+        input_args_list = [x[0] for _, x, _ in mock_pprint.mock_calls]
+        meta_symbol_with_empty_history = ['MRC', 'KGC']
+        for input_args in input_args_list:
+            if input_args['meta']['symbol'] in meta_symbol_with_empty_history:
+                assert not input_args['history']
+            else:
+                assert input_args['history']
 
     def test_premarket(self,
                        mock_get_report_links,
